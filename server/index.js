@@ -18,14 +18,14 @@ const client = new Client({
     password: '1234',
     port: 5432,
 })
-client.connect()
+//client.connect()
 
 const createTable = async () => {
     await client.query(`CREATE TABLE IF NOT EXISTS users 
   (id serial PRIMARY KEY, name VARCHAR (255) UNIQUE NOT NULL, 
   email VARCHAR (255) UNIQUE NOT NULL, age INT NOT NULL);`)
 }
-createTable()
+//createTable()
 
 app.use(cors(corsOptions))
 app.use(express.json())
