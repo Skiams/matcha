@@ -12,7 +12,7 @@ const corsOptions = {
 const { Client } = pg;
 
 const client = new Client({
-    user: 'USER',
+    user: 'TEST',
     host: 'db',
     database: 'postgres',
     password: 'te6%hed!^8*',
